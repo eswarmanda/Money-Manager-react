@@ -1,0 +1,140 @@
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.money-card {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  height: 600px;
+  width: 580px;
+  border-width: 0.1px;
+  padding: 30px;
+}
+.user-card {
+  background-image: url(https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png);
+  height: 100px;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.user-name {
+  font-size: large;
+  color: #475569;
+}
+.description {
+  font-size: small;
+  color: #7e858e;
+  font-weight: 450;
+}
+.span-des {
+  color: blue;
+}
+.transaction-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.type-card {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  width: 220px;
+  height: 330px;
+  border-width: 0.1px;
+  padding: 20px;
+}
+.history-card {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  width: 280px;
+  border-width: 0.1px;
+  padding: 20px;
+  height: 330px;
+}
+.add-tran {
+  font-size: 15px;
+  color: #7e858e;
+}
+.add-history {
+  font-size: 15px;
+  color: #7e858e;
+}
+.title-label {
+  font-size: xx-small;
+  font-weight: 600;
+  color: #969697;
+}
+.title-input {
+  height: 25px;
+  width: 180px;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: #e0e0e0;
+  margin-bottom: 15px;
+  outline: none;
+  margin-top: 5px;
+}
+.amount-label {
+  font-size: xx-small;
+  font-weight: 600;
+  color: #969697;
+}
+.amount-input {
+  height: 25px;
+  width: 180px;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: #e0e0e0;
+  margin-bottom: 15px;
+  outline: none;
+  margin-top: 5px;
+}
+.select-option {
+  height: 25px;
+  width: 180px;
+  padding: 2px;
+  border-radius: 5px;
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: #e0e0e0;
+  margin-bottom: 15px;
+  outline: none;
+  margin-top: 5px;
+}
+.add-btn {
+  background-color: #0b69ff;
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+  height: 25px;
+  color: aliceblue;
+}
+.trans-details {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 50px;
+  margin-bottom: -17px;
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  border-width: 0.1px;  
+}
+.ul-card {
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  border-width: 0.1px;
+  height: fit-content;
+}
+p {
+  font-size: 10px;
+  color: #444444;
+  font-weight: 500;
+}
