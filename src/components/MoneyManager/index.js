@@ -55,7 +55,7 @@ class MoneyManager extends Component {
       transactionsList: [...prevState.transactionsList, newTransaction],
       getTitle: '',
       getAmount: '',
-      optionId: transactionTypeOptions[1].optionId,
+      optionId: transactionTypeOptions[0].optionId,
     }))
   }
 
@@ -67,7 +67,7 @@ class MoneyManager extends Component {
     this.setState({getAmount: event.target.value})
   }
 
-  selectedOptionId = event => {
+  onChangeOptionId = event => {
     this.setState({optionId: event.target.value})
     console.log(event.target.value)
   }
@@ -117,7 +117,7 @@ class MoneyManager extends Component {
   }
 
   render() {
-    const {getTitle, getAmount, transactionsList} = this.state
+    const {getTitle, getAmount, optionId, transactionsList} = this.state
     const balanceAmount = this.getBalance()
     const incomeAmount = this.getIncome()
     const expensesAmount = this.getExpenses()
@@ -143,7 +143,7 @@ class MoneyManager extends Component {
             <div className="transaction-card">
               <div className="type-card">
                 <h1 className="add-tran">Add Transaction</h1>
-                <form onSubmit={this.addTransaction}>
+                <form value={optionId} onSubmit={this.addTransaction}>
                   <label className="title-label" htmlFor="title">
                     TITLE
                   </label>
@@ -177,7 +177,8 @@ class MoneyManager extends Component {
                   <select
                     className="select-option"
                     id="select"
-                    onChange={this.selectedOption}
+                    value={optionId}
+                    onChange={this.onChangeOptionId}
                   >
                     {transactionTypeOptions.map(eachOption => (
                       <option
